@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SPORTAD</title>
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!-- style css -->
     <link rel="stylesheet" href="css/estilos.css" />
     <!-- icono -->
@@ -19,19 +20,17 @@
 
   <body>
     <div id="main">
-      
-
       <div class="header_section">
+         <!-- Barra de Navegacion-->
          <div class="container-fluid">
             <nav
-              class="navbar navbar-expand-md navbar-light bg-transparent border-3 border-bottom border-primary"
+              class="navbar navbar-expand-sm navbar-dark bg-dark border-2 border-bottom border-primary"
             >
               <div class="container-fluid">
                 <a href="#" class="navbar-brand">
                   <img
                     src="images/sportad-high-resolution-logo-black-on-transparent-background.png"
-                    style="width: 10%"
-                /></a>
+                    style="width: 10%"/></a>
                
                       <div id="Menu_Nav">
                   <ul class="navbar-nav m-sm-3">
@@ -53,144 +52,72 @@
               </div>
             </nav>
           </div>
-        <div class="banner_section layout_padding">
-          <div class="container">
-            <section>
-              <div
-                id="main_slider"
-                class="section carousel slide banner-main"
-                data-ride="carousel"
-              >
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#main_slider"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li data-target="#main_slider" data-slide-to="1"></li>
-                  <li data-target="#main_slider" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="container">
-                      <div class="row marginii">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                          <div class="carousel-sporrt_text">
-                            <h1 class="sport_text">
-                              <strong
-                                >Sports<br /><span style="color: #fff"
-                                  >Cycle</span
-                                ></strong
-                              >
-                            </h1>
-                            <p class="lorem_text">
-                              It is a long established fact that a reader will
-                              be distracted by the readable content of a page
-                              when looking at its layout. The point of using
-                              Lorem Ipsum is that it has a more-or-less normal
-                              distribution of letters, as opposed to using
-                              'Content here, content
-                            </p>
-                            <button class="boynow_bt">Boy Now</button>
-                            <button class="contact_bt">Contact Us</button>
-                          </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                          <div class="img-box">
-                            <figure>
-                              <img
-                                src="images/img-1.png"
-                                style="max-width: 100%"
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="container">
-                      <div class="container">
-                        <div class="row marginii">
-                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="carousel-sporrt_text">
-                              <h1 class="sport_text">
-                                <strong
-                                  >Sports<br /><span style="color: #fff"
-                                    >Cycle</span
-                                  ></strong
-                                >
-                              </h1>
-                              <p class="lorem_text">
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout. The point of using
-                                Lorem Ipsum is that it has a more-or-less normal
-                                distribution of letters, as opposed to using
-                                'Content here, content
-                              </p>
-                              <button class="boynow_bt">Boy Now</button>
-                              <button class="contact_bt">Contact Us</button>
-                            </div>
-                          </div>
-                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="img-box">
-                              <figure>
-                                <img
-                                  src="images/img-1.png"
-                                  style="max-width: 100%"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="container">
-                      <div class="row marginii">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                          <div class="carousel-sporrt_text">
-                            <h1 class="sport_text">
-                              <strong
-                                >Sports<br /><span style="color: #fff"
-                                  >Cycle</span
-                                ></strong
-                              >
-                            </h1>
-                            <p class="lorem_text">
-                              It is a long established fact that a reader will
-                              be distracted by the readable content of a page
-                              when looking at its layout. The point of using
-                              Lorem Ipsum is that it has a more-or-less normal
-                              distribution of letters, as opposed to using
-                              'Content here, content
-                            </p>
-                            <button class="boynow_bt">Boy Now</button>
-                            <button class="contact_bt">Contact Us</button>
-                          </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                          <div class="img-box">
-                            <figure>
-                              <img
-                                src="images/img-1.png"
-                                style="max-width: 100%"
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+<!--Carrusel-->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <a href="#"><img src="images/Bici_1.png" class="d-block w-100"></a>
+              </div>
+              <div class="carousel-item">
+               <a href="#"><img src="images/Bici_2.png" class="d-block w-100"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="images/Bici_3.png" class="d-block w-100"></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+          <!--Productos-->
+          
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+               <div class="card" style="width: 18rem;">
+                  <img src="images/img-1.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Bicicleta MTB Optimus</h5>
+                    <h6 class="card-text">$750.000</h6>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
               </div>
-            </section>
+              <div class="col">
+               <div class="card" style="width: 18rem;">
+                  <img src="images/Bici_2.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Bicicleta MTB Optimus</h5>
+                    <h6 class="card-text">$750.000</h6>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+               <div class="card" style="width: 18rem;">
+                  <img src="images/Bici_1.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Bicicleta MTB Optimus</h5>
+                    <h6 class="card-text">$750.000</h6>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+          
+
     <!-- about section start -->
     <div class="container-fluid">
       <div class="about_section">
@@ -351,16 +278,9 @@
     <!-- our section end -->
 
     <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript -->
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
   </body>
 </html>

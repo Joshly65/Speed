@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-@import url(meanmenu.css);
-@import url(animate.min.css);
-@import url(slick.css);
+
 
 body {
   color: #000;
@@ -86,6 +84,10 @@ button {
 }
 
 
+.carousel-item{
+ width: 50%;
+ margin-left: 25%;
+}
 
 .logo{ width: 30%; float: center; margin-top: -20px;}
 
@@ -99,7 +101,7 @@ button {
 .header_section {
 	width: 100%;
 	float: left;
-	background-color: #4B91F1;
+	background-color: #ffffff;
 	padding-bottom: 20px;
 	background-size: 100%;
 	padding-top: 0px;
@@ -107,6 +109,11 @@ button {
 	padding-right: 20px;
 }
 
+
+.card{
+    float: right;
+    margin-top: 30px;
+}
 .menu_main {
     float: left;
     padding-left: 10px;
@@ -176,6 +183,7 @@ button {
 .about_section{
 	width: 100%;
 	float: left;
+    padding-top: 100px;
 }
 .about_text {
     width: 60%;
