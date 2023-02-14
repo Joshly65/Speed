@@ -1,185 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- bootstrap css -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <script src="js/popper.min.js"></script>
+
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+
+  <title>Carrito Compras en JavaScript</title>
+
 </head>
+
 <body>
-    <section class="h-100 h-custom" style="background-color: #ffffff;">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12">
-              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
-                <div class="card-body p-0">
-                  <div class="row g-0">
-                    <div class="col-lg-8">
-                      <div class="p-5">
-                        <div class="d-flex justify-content-between align-items-center mb-5">
-                          <h1 class="fw-bold mb-0 text-black">Carrito de compras</h1>
-                          <h6 class="mb-0 text-muted">--</h6>
-                        </div>
-                        <hr class="my-4">
-      
-                        <div class="row mb-4 d-flex justify-content-between align-items-center">
-                          <div class="col-md-2 col-lg-2 col-xl-2">
-                            <img
-                              src="images/img-1.png"
-                              class="img-fluid rounded-3" alt="Bici_1">
-                          </div>
-                          <div class="col-md-3 col-lg-3 col-xl-3">
-                            <h6 class="text-muted">Bicicleta</h6>
-                            <h6 class="text-black mb-0">Bicicleta MTB Optimus</h6>
-                          </div>
-                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                            <button class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                              <i class="fas fa-minus"></i>
-                            </button>
-      
-                            <input id="form1" min="0" name="quantity" value="1" type="number"
-                              class="form-control form-control-sm" />
-      
-                            <button class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                              <i class="fas fa-plus"></i>
-                            </button>
-                          </div>
-                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                            <h6 class="mb-0">$750.000</h6>
-                          </div>
-                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                          </div>
-                        </div>
-      
-                        <hr class="my-4">
-      
-                        <div class="row mb-4 d-flex justify-content-between align-items-center">
-                          <div class="col-md-2 col-lg-2 col-xl-2">
-                            <img
-                              src="images/Bici_2.png"
-                              class="img-fluid rounded-3" alt="Bici_2">
-                          </div>
-                          <div class="col-md-3 col-lg-3 col-xl-3">
-                            <h6 class="text-muted">Bicicleta</h6>
-                            <h6 class="text-black mb-0">Bicicleta MTB Optimus 2</h6>
-                          </div>
-                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                            <button class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                              <i class="fas fa-minus"></i>
-                            </button>
-      
-                            <input id="form1" min="0" name="quantity" value="1" type="number"
-                              class="form-control form-control-sm" />
-      
-                            <button class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                              <i class="fas fa-plus"></i>
-                            </button>
-                          </div>
-                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                            <h6 class="mb-0">$650.000</h6>
-                          </div>
-                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                          </div>
-                        </div>
-      
-                        <hr class="my-4">
-      
-                        <div class="row mb-4 d-flex justify-content-between align-items-center">
-                          <div class="col-md-2 col-lg-2 col-xl-2">
-                            <img
-                              src="images/Bici_3.png"
-                              class="img-fluid rounded-3" alt="Bici_3">
-                          </div>
-                          <div class="col-md-3 col-lg-3 col-xl-3">
-                            <h6 class="text-muted">Bicicleta</h6>
-                            <h6 class="text-black mb-0">Bicicleta MTB Optimus</h6>
-                          </div>
-                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                            <button class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                              <i class="fas fa-minus"></i>
-                            </button>
-      
-                            <input id="form1" min="0" name="quantity" value="1" type="number"
-                              class="form-control form-control-sm" />
-      
-                            <button class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                              <i class="fas fa-plus"></i>
-                            </button>
-                          </div>
-                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                            <h6 class="mb-0">$850.000</h6>
-                          </div>
-                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                          </div>
-                        </div>
-      
-                        <hr class="my-4">
-      
-                        <div class="pt-5">
-                          <h6 class="mb-0"><a href="index.html" class="text-body"><i
-                                class="fas fa-long-arrow-alt-left me-2"></i>De vuelta a la tienda</a></h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 bg-grey">
-                      <div class="p-5">
-                        <h3 class="fw-bold mb-5 mt-2 pt-1">Total</h3>
-                        <hr class="my-4">
-      
-                        <div class="d-flex justify-content-between mb-4">
-                          <h5 class="text-uppercase">3 Productos</h5>
-                          <h5>$2'250.000</h5>
-                        </div>
-      
-                        <h5 class="text-uppercase mb-3">Envio</h5>
-      
-                        <div class="mb-4 pb-2">
-                          <select class="select">
-                            <option value="1">Envio $15.000</option>
-                            <option value="2">---</option>
-                            <option value="3">---</option>
-                            <option value="4">---</option>
-                          </select>
-                        </div>
-      
-                        <h5 class="text-uppercase mb-3">Codigo descuento</h5>
-      
-                        <div class="mb-5">
-                          <div class="form-outline">
-                            <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Examplea2">Ingresa Codigo</label>
-                          </div>
-                        </div>
-      
-                        <hr class="my-4">
-      
-                        <div class="d-flex justify-content-between mb-5">
-                          <h5 class="text-uppercase">Total</h5>
-                          <h5>--------</h5>
-                        </div>
-      
-                        <button type="button" class="btn btn-dark btn-block btn-lg"
-                          data-mdb-ripple-color="dark">Pagar</button>
-      
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+
+  <header>
+
+    <!-- Barra de Navegacion-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-2 border-bottom border-primary">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="images/sportad-high-resolution-logo-black-on-transparent-background.png" style="width: 10%" /></a>
+
+          <div id="Menu_Nav">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="images/cart2.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Login.html"><img src="images/user.png"></a>
+              </li>
+            </ul>
+
+          </div>
+
+  </header>
+
+  <br>
+
+  <main>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col">
+          <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+          <form id="procesar-pago" action="#" method="post">
+            <div class="form-group row">
+              <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+              <div class="col-12 col-md-10">
+                <input type="text" class="form-control" id="cliente" placeholder="Ingresa nombre cliente"
+                  name="destinatario">
               </div>
             </div>
-          </div>
+            <div class="form-group row">
+              <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+              <div class="col-12 col-md-10">
+                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+              </div>
+            </div>
+
+            <div id="carrito" class="form-group table-responsive">
+              <table class="table" id="lista-compra">
+                <thead>
+                  <tr>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Sub Total</th>
+                    <th scope="col">Eliminar</th>
+                  </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tr>
+                  <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                  <th scope="col">
+                    <p id="subtotal"></p>
+                  </th>
+                  <!-- <th scope="col"></th> -->
+                </tr>
+                <tr>
+                  <th colspan="4" scope="col" class="text-right">IGV :</th>
+                  <th scope="col">
+                    <p id="igv"></p>
+                  </th>
+                  <!-- <th scope="col"></th> -->
+                </tr>
+                <tr>
+                  <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                  <th scope="col">
+                    <input id="total" name="monto" class="font-weight-bold border-0" readonly
+                      style="background-color: white;"></input>
+                  </th>
+                  <!-- <th scope="col"></th> -->
+                </tr>
+
+              </table>
+            </div>
+
+
+
+            <div class="row justify-content-between">
+              <div class="col-md-4 mb-2">
+                <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar
+                  compra</button>
+              </div>
+            </div>
+          </form>
+
+
         </div>
-      </section>
+
+
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+
+  <script src="js/carrito.js"></script>
+  <script src="js/compra.js"></script>
+
+
+
 </body>
+
 </html>

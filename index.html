@@ -1,286 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SPORTAD</title>
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/estilos.css" />
-    <!-- icono -->
-    <link
-      rel="icon"
-      href="images/sportad-website-favicon-white.png"
-      type="image/gif"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPORTAD</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-  <body>
-    <div id="main">
-      <div class="header_section">
-         <!-- Barra de Navegacion-->
-         <div class="container-fluid">
-            <nav
-              class="navbar navbar-expand-sm navbar-dark bg-dark border-2 border-bottom border-primary"
-            >
-              <div class="container-fluid">
-                <a href="#" class="navbar-brand">
-                  <img
-                    src="images/sportad-high-resolution-logo-black-on-transparent-background.png"
-                    style="width: 10%"/></a>
-               
-                      <div id="Menu_Nav">
-                  <ul class="navbar-nav m-sm-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Cart.html"><img src="images/cart2.png"></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Login.html"><img src="images/user.png"></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Categorias.html">Categorias</a>
-                    </li>
-                  </ul>
-                  
-                </div>
-              </div>
-            </nav>
-          </div>
-<!--Carrusel-->
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-               <a href="#"><img src="images/Bici_1.png" class="d-block w-100"></a>
-              </div>
-              <div class="carousel-item">
-               <a href="#"><img src="images/Bici_2.png" class="d-block w-100"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="images/Bici_3.png" class="d-block w-100"></a>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/estilos.css" />
+  <!-- icono -->
+  <link rel="icon" href="images/sportad-website-favicon-white.png" type="image/gif" />
+</head>
 
-          <!--Productos-->
-          
-          <div class="container text-center">
-            <div class="row">
-              <div class="col">
-               <div class="card" style="width: 18rem;">
-                  <img src="images/img-1.png" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Bicicleta MTB Optimus</h5>
-                    <h6 class="card-text">$750.000</h6>
-                    <a href="Cart.html" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-               <div class="card" style="width: 18rem;">
-                  <img src="images/Bici_2.png" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Bicicleta MTB Optimus</h5>
-                    <h6 class="card-text">$650.000</h6>
-                    <a href="Cart.html" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-               <div class="card" style="width: 18rem;">
-                  <img src="images/Bici_1.png" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Bicicleta MTB Optimus</h5>
-                    <h6 class="card-text">$850.000</h6>
-                    <a href="Cart.html" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-              </div>
+<body>
+  <div id="main">
+    <div class="header_section">
+      <!-- Barra de Navegacion-->
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-2 border-bottom border-primary">
+         
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+              <img src="images/sportad-high-resolution-logo-black-on-transparent-background.png"
+                style="width: 10%" /></a>
+
+            <div id="Menu_Nav">
+              <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Categorias</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" id="procesar-pedido" class="btn btn-block"><img src="images/cart2.png"></a>
+            
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Login.html"><img src="images/user.png"></a>
+                </li>
+
+              </ul>
+
             </div>
           </div>
-          
-
-    <!-- about section start -->
-    <div class="container-fluid">
-      <div class="about_section">
-        <div class="container">
-          <div class="about_img">
-            <img src="images/about-img1.png" style="max-width: 100%" />
-          </div>
-          <h2 class="about_text">
-            <strong>Sobre <span style="color: #000">Nosotros</span></strong>
-          </h2>
-          <div class="about_middle">
-            <p class="about_lorem">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it It is a long established fact that a
-              reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it
-              has a more-or-less normal distribution of letters, as opposed to
-              using 'Content here, content here', making it
-            </p>
-          </div>
-          <div class="red_bt">
-            <button class="read_more">Ver mas</button>
-          </div>
-        </div>
+        
+        </nav>
       </div>
-    </div>
-    <!-- about section end -->
-    <!-- our section start -->
-    <div class="our_section">
-      <div class="container">
+      <!--Carrusel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div id="my_slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/Bici_1.png" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/Bici_2.png" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/Bici_3.png" alt="Third slide" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">B</span>
+          </a>
+          <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">N</span>
+          </a>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <!--Productos-->
+
+      <div class="container text-center">
+
         <div class="row">
-          <div class="col-sm-12">
-            <h1 class="our_text">
-              <strong>Nuestros <span style="color: #000">Productos</span></strong>
-            </h1>
-            <p class="about_lorem">
-              t is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="our_section_2">
-        <div class="our_main">
-          <div id="my_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block w-100"
-                  src="images/our-img-1.png"
-                  alt="First slide"
-                />
+          <div class="card-deck mb-3 text-center">
+
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-bold">Bicicleta MTB Optimus</h4>
               </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100"
-                  src="images/our-img-1.png"
-                  alt="Second slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100"
-                  src="images/our-img-1.png"
-                  alt="Third slide"
-                />
+              <div class="card-body" style="width: 18rem;">
+                <img src="images/img-1.png" class="card-img-top">
+                <h1 class="card-title pricing-card-title precio">$ <span class="">700.000</span></h1>
+
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li></li>
+                  <li>Tucana 9</li>
+                  <li>COLOR NARANJA</li>
+                </ul>
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
               </div>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#my_slider"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">B</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#my_slider"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">N</span>
-            </a>
+
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-bold">Bicicleta MTB Optimus</h4>
+              </div>
+              <div class="card-body" style="width: 18rem;">
+                <img src="images/Bici_2.png" class="card-img-top">
+                <h1 class="card-title pricing-card-title precio">$<span class="">750.000</span></h1>
+
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li></li>
+                  <li>Tucana 10</li>
+                  <li>COLOR NEGRO</li>
+                </ul>
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+              </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-bold">Bicicleta MTB Optimus</h4>
+              </div>
+              <div class="card-body" style="width: 18rem;">
+                <img src="images/Bici_3.png" class="card-img-top">
+                <h1 class="card-title pricing-card-title precio">$<span class="">850.000</span></h1>
+
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li></li>
+                  <li>Tucana PRO</li>
+                  <li>COLOR NEGRO/BLANCO</li>
+                </ul>
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+              </div>
+            </div>
+
+
           </div>
         </div>
-        <button class="seemore_bt">Ver mas</button>
-      </div>
-    </div>
-    <div class="contact_section layout_padding">
-      <div class="container">
-        <h1 class="contact_text"><strong>Contacto</strong></h1>
-      </div>
-      <div class="contact_main">
-        <div class="enput_section">
-          <div class="email_box">
-            <div class="input_main">
-              <div class="container">
-                <form action="/action_page.php">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="email-bt"
-                      placeholder="Name"
-                      name="Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="email-bt"
-                      placeholder="Email"
-                      name="Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="email-bt"
-                      placeholder="Phone Numbar"
-                      name="Email"
-                    />
-                  </div>
 
-                  <div class="form-group">
-                    <textarea
-                      class="massage-bt"
-                      placeholder="Massage"
-                      rows="5"
-                      id="comment"
-                      name="Massage"
-                    ></textarea>
-                  </div>
-                </form>
+
+        <!-- about section start -->
+        <div class="container-fluid">
+          <div class="about_section">
+            <div class="container">
+              <div class="about_img">
+                <img src="images/about-img1.png" style="max-width: 100%" />
               </div>
-              <div class="send_btn">
-                <button type="button" class="main_bt">
-                  <a href="#">Enviar</a>
-                </button>
+              <h2 class="about_text">
+                <strong>Sobre <span style="color: #000">Nosotros</span></strong>
+              </h2>
+              <div class="about_middle">
+                <p class="about_lorem">
+                  It is a long established fact that a reader will be distracted by
+                  the readable content of a page when looking at its layout. The
+                  point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here,
+                  content here', making it It is a long established fact that a
+                  reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it
+                  has a more-or-less normal distribution of letters, as opposed to
+                  using 'Content here, content here', making it
+                </p>
+              </div>
+              <div class="red_bt">
+                <button class="read_more">Ver mas</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- our section end -->
+        <!-- about section end -->
+        <!-- our section start -->
+        <div class="our_section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="our_text">
+                  <strong>Nuestros <span style="color: #000">Productos</span></strong>
+                </h1>
+                <p class="about_lorem">
+                  t is a long established fact that a reader will be distracted by
+                  the readable content of a page when looking at its layout. The
+                  point of using Lorem Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="our_section_2">
+            <div class="our_main">
+              <div id="my_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/our-img-1.png" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/our-img-1.png" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/our-img-1.png" alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">B</span>
+                </a>
+                <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">N</span>
+                </a>
+              </div>
+            </div>
+            <button class="seemore_bt">Ver mas</button>
+          </div>
+        </div>
+        <div class="contact_section layout_padding">
+          <div class="container">
+            <h1 class="contact_text"><strong>Contacto</strong></h1>
+          </div>
+          <div class="contact_main">
+            <div class="enput_section">
+              <div class="email_box">
+                <div class="input_main">
+                  <div class="container">
+                    <form action="/action_page.php">
+                      <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Name" name="Name" />
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Email" name="Name" />
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Phone Numbar" name="Email" />
+                      </div>
 
-    <!-- Javascript files-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-   
-  </body>
+                      <div class="form-group">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment"
+                          name="Massage"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="send_btn">
+                    <button type="button" class="main_bt">
+                      <a href="#">Enviar</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- our section end -->
+
+        <!-- Javascript files-->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sweetalert2.min.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/pedido.js"></script>
+
+</body>
+
 </html>
