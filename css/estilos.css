@@ -501,13 +501,6 @@ button.main_bt a:hover { color: #faf9f9; }
 	font-size: 15px;
 }
 
-
-
-
-
-
-
-
 .sidebar {
   height: 100%;
   width: 0;
@@ -559,11 +552,6 @@ button.main_bt a:hover { color: #faf9f9; }
   transition: margin-left .5s;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
 
 .footer_padding{
 	margin: 0px;
