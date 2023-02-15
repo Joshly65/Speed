@@ -1,12 +1,12 @@
-const username = document.getElementById('username')
-const password = document.getElementById('password')
+const username = document.getElementById('usuario')
+const password = document.getElementById('contraseña')
 const button = document.getElementById('button')
 
 button.addEventListener('click', (e) => {
     e.preventDefault()
     const data = {
-        username: username.value,
-        password: password.value
+        usuario: username.value,
+        contraseña: password.value
     }
 
     console.log(data)
